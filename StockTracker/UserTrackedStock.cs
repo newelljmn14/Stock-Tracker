@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 
 namespace StockTracker
 {
-    public class UserTrackedStock : Stock, IEntity
+    public class UserTrackedStock
     {
+        public UserTrackedStock()
+        {
+
+        }
+
+        public string Name { get; set; }
+        public decimal InitialPrice { get; set; }
         public int Id { get; set; }
         public User User { get; set; }
 
-        public DateTime? DateTimeTracked { get; set; }
+        public DateTime? DateTracked { get; set; }
 
-        public UserTrackedStock(string stockName, User user) : base(stockName)
-        {
-            this.User = user;
-        }
     }
 }
