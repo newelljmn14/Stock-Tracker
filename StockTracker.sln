@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTracker.DataAccess", "StockTracker\StockTracker.DataAccess.csproj", "{CA9718C3-8454-41A2-9C45-F5C49A05CEF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTracker.Server", "StockTracker.Server\StockTracker.Server.csproj", "{8F0F1A0B-7594-4199-9661-299509687013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTracker.Tests", "StockTracker.Tests\StockTracker.Tests.csproj", "{36CBC34E-D093-47A1-8BB2-36269BC7B008}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{CA9718C3-8454-41A2-9C45-F5C49A05CEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA9718C3-8454-41A2-9C45-F5C49A05CEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA9718C3-8454-41A2-9C45-F5C49A05CEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F0F1A0B-7594-4199-9661-299509687013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F0F1A0B-7594-4199-9661-299509687013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F0F1A0B-7594-4199-9661-299509687013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F0F1A0B-7594-4199-9661-299509687013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36CBC34E-D093-47A1-8BB2-36269BC7B008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CBC34E-D093-47A1-8BB2-36269BC7B008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CBC34E-D093-47A1-8BB2-36269BC7B008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CBC34E-D093-47A1-8BB2-36269BC7B008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
