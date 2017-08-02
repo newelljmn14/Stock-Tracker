@@ -1,8 +1,7 @@
-namespace StockTracker.Migrations
+using System.Data.Entity.Migrations;
+
+namespace StockTracker.DataAccess.Migrations
 {
-    using System;
-    using System.Data.Entity.Migrations;
-    
     public partial class UserPropEmailAddress : DbMigration
     {
         public override void Up()

@@ -1,11 +1,8 @@
-namespace StockTracker.Migrations
-{
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
+using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<StockTracker.StockTrackerContext>
+namespace StockTracker.DataAccess.Migrations
+{
+    internal sealed class Configuration : DbMigrationsConfiguration<StockTrackerContext>
     {
         public Configuration()
         {
@@ -13,7 +10,7 @@ namespace StockTracker.Migrations
             ContextKey = "StockTracker.StockTrackerContext";
         }
 
-        protected override void Seed(StockTracker.StockTrackerContext context)
+        protected override void Seed(StockTrackerContext context)
         {
             //  This method will be called after migrating to the latest version.
 

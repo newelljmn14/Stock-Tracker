@@ -1,8 +1,8 @@
-﻿using HtmlAgilityPack;
-using System;
+﻿using System;
 using System.Linq;
+using HtmlAgilityPack;
 
-namespace StockTracker
+namespace StockTracker.DataAccess
 {
     public class StockPriceGrabber
     {

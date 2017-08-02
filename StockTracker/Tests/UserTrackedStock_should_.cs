@@ -1,9 +1,8 @@
-﻿
-using System;
+﻿using System;
 using System.Linq;
 using NUnit.Framework;
 
-namespace StockTracker.Tests
+namespace StockTracker.DataAccess.Tests
 {
     public class UserTrackedStock_should_
     {

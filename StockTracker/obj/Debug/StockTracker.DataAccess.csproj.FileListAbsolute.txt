@@ -1,0 +1,1 @@
+C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\bin\Debug\StockTracker.DataAccess.exe.config

@@ -1,4 +1,4 @@
-﻿namespace StockTracker
+﻿namespace StockTracker.DataAccess
 {
     internal interface IEntity
     {

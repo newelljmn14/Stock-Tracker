@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\UserTrackedStock.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\App.config</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\IEntity.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\Stock.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\StockTrackerContext.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\Tests\UserTrackedStock_should_.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>
