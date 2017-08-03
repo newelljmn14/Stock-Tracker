@@ -2,7 +2,7 @@
 
 namespace StockTracker.DataAccess
 {
-    class StockTrackerContext : DbContext
+    public class StockTrackerContext : DbContext
     {
         public StockTrackerContext() : base("name=stockTrackerConnection")
         {
@@ -11,5 +11,6 @@ namespace StockTracker.DataAccess
 
         public DbSet<UserTrackedStock> UserTrackedStocks { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Stock> Stocks { get; set; }
     }
 }

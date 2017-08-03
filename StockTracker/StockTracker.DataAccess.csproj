@@ -70,9 +70,9 @@
     <Compile Include="Migrations\201707260138392_RefactorStocksWithGrabber.Designer.cs">
       <DependentUpon>201707260138392_RefactorStocksWithGrabber.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201707262127343_UserTrackedStockChanged.cs" />
-    <Compile Include="Migrations\201707262127343_UserTrackedStockChanged.Designer.cs">
-      <DependentUpon>201707262127343_UserTrackedStockChanged.cs</DependentUpon>
+    <Compile Include="Migrations\201708030412489_Stock.cs" />
+    <Compile Include="Migrations\201708030412489_Stock.Designer.cs">
+      <DependentUpon>201708030412489_Stock.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -98,8 +98,8 @@
     <EmbeddedResource Include="Migrations\201707260138392_RefactorStocksWithGrabber.resx">
       <DependentUpon>201707260138392_RefactorStocksWithGrabber.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707262127343_UserTrackedStockChanged.resx">
-      <DependentUpon>201707262127343_UserTrackedStockChanged.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708030412489_Stock.resx">
+      <DependentUpon>201708030412489_Stock.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

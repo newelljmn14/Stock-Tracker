@@ -1,0 +1,15 @@
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\StockTracker.Tests.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\StockTracker.Tests.pdb
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\nunit.framework.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\nunit.framework.xml
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\obj\Debug\StockTracker.Tests.csprojResolveAssemblyReference.cache
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\obj\Debug\StockTracker.Tests.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\obj\Debug\StockTracker.Tests.pdb
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\StockTracker.DataAccess.exe
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\HtmlAgilityPack.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\EntityFramework.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\StockTracker.DataAccess.pdb
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\StockTracker.DataAccess.exe.config
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\HtmlAgilityPack.xml
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\EntityFramework.xml

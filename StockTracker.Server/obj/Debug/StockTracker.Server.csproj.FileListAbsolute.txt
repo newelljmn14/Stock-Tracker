@@ -80,3 +80,15 @@ C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracke
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\obj\Debug\StockTracker.Server.csprojResolveAssemblyReference.cache
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\obj\Debug\StockTracker.Server.dll
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\obj\Debug\StockTracker.Server.pdb
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\EntityFramework.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\EntityFramework.SqlServer.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\StockTracker.DataAccess.exe
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\HtmlAgilityPack.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\nunit.framework.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\StockTracker.DataAccess.pdb
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\StockTracker.DataAccess.exe.config
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\EntityFramework.xml
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\EntityFramework.SqlServer.xml
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\HtmlAgilityPack.pdb
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\HtmlAgilityPack.xml
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Server\bin\nunit.framework.xml

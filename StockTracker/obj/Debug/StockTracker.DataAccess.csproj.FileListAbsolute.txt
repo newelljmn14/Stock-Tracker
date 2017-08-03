@@ -34,7 +34,7 @@ C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracke
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.Migrations.InitialCreate.resources
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.Migrations.UserPropEmailAddress.resources
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.Migrations.RefactorStocksWithGrabber.resources
-C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.Migrations.UserTrackedStockChanged.resources
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.csproj.GenerateResource.Cache
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.exe
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.pdb
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.Migrations.Stock.resources
