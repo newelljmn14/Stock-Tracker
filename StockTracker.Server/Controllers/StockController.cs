@@ -11,18 +11,61 @@ namespace StockTracker.Server.Controllers
 {
     public class StockController : ApiController
     {
-        public StockView Get(int id = 0)
+        public List<StockView> Get(int id = 0)
         {
-            var stockView = new StockView();
-            
-            using (var context = new StockTrackerContext())
-            {
-                context.Stocks.Add(new Stock("NKE"));
-                var returnedStock = context.Stocks.FirstOrDefault(s => s.StockName == "NKE");
-                stockView.Name = returnedStock.StockName;
-            }
 
-            return stockView;
+            using (var ctx = new StockTrackerContext())
+            {
+                if (id != 0)
+                {
+                    return ctx.Stocks
+                        .Where(s => s.Id == id)
+                        .Select(s => new StockView
+                        {
+                            Id = s.Id,
+                            Name = s.StockName
+                        })
+                        .ToList();
+                }
+                return ctx.Stocks
+                    .Select(s => new StockView
+                    {
+                        Id = s.Id,
+                        Name = s.StockName
+                    })
+                    .ToList();
+
+            }
+        }
+
+        public int Post(StockView stockView)
+        {
+            using (var ctx = new StockTrackerContext())
+            {
+                var stockToCreate = new Stock
+                {
+                    StockName = stockView.Name,
+                };
+                ctx.Stocks.Add(stockToCreate);
+                ctx.SaveChanges();
+                return stockToCreate.Id;
+            }
+        }
+
+        public void Delete(int id)
+        {
+            using (var ctx = new StockTrackerContext())
+            {
+                var stockToDelete = ctx.Stocks.FirstOrDefault(s => s.Id == id);
+
+                if (stockToDelete == null)
+                {
+                    throw new Exception("Stock not found");
+                }
+
+                ctx.Stocks.Remove(stockToDelete);
+                ctx.SaveChanges();
+            }
         }
     }
 }
