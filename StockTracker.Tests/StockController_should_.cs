@@ -1,6 +1,8 @@
 ﻿using System.Linq;
+using FluentAssertions;
 using NUnit.Framework;
 using StockTracker.DataAccess;
+using StockTracker.Server.Controllers;
 
 namespace StockTracker.Tests
 {
@@ -39,11 +41,16 @@ namespace StockTracker.Tests
         [Test]
         public void should_get_a_stock_from_database_with_id_1()
         {
-            //string stocksUrl = "http://localhost:22447/api/stock/1";
-            //HttpClient client = new HttpClient();
-            //HttpResponseMessage response = client.GetAsync(stocksUrl).Result;
+            using (var context = new StockTrackerContext())
+            {
+                var expectedStock = context.Stocks.First();
+                var stockController = new StockController();
+                var actualStock = stockController.Get(expectedStock.Id)[0];
 
-            //Assert.AreEqual(response, 0);
+                expectedStock.ShouldBeEquivalentTo(actualStock);
+            }
+
+            
         }
     }
 }
