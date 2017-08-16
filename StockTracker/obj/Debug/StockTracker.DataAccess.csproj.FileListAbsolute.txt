@@ -1,5 +1,3 @@
-C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\bin\Debug\StockTracker.DataAccess.exe.config
-C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\bin\Debug\StockTracker.DataAccess.exe
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\bin\Debug\StockTracker.DataAccess.pdb
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\bin\Debug\EntityFramework.dll
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\bin\Debug\EntityFramework.SqlServer.dll
@@ -15,7 +13,6 @@ C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracke
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.Migrations.UserPropEmailAddress.resources
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.Migrations.RefactorStocksWithGrabber.resources
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.csproj.GenerateResource.Cache
-C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.exe
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.pdb
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.Migrations.Stock.resources
 C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\bin\Debug\StockTracker.DataAccess.dll.config
@@ -38,3 +35,6 @@ C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\obj\Debug\Stock
 C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\obj\Debug\StockTracker.DataAccess.csproj.GenerateResource.Cache
 C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\obj\Debug\StockTracker.DataAccess.dll
 C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\obj\Debug\StockTracker.DataAccess.pdb
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\bin\Debug\StockTracker.DataAccess.dll.config
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\bin\Debug\StockTracker.DataAccess.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.dll

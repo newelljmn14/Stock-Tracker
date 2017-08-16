@@ -4,7 +4,7 @@ namespace StockTracker.DataAccess
 {
     public class StockTrackerContext : DbContext
     {
-        public StockTrackerContext() : base("name=stockTrackerConnection")
+        public StockTrackerContext() : base("name=stockTrackerConnectionHome")
         {
 
         }
