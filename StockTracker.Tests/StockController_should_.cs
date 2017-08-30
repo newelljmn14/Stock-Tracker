@@ -3,6 +3,7 @@ using FluentAssertions;
 using NUnit.Framework;
 using StockTracker.DataAccess;
 using StockTracker.Server.Controllers;
+using StockTracker.Server.Views;
 
 namespace StockTracker.Tests
 {
@@ -49,8 +50,55 @@ namespace StockTracker.Tests
 
                 expectedStock.ShouldBeEquivalentTo(actualStock);
             }
-
             
         }
+
+        [Test]
+        public void should_post_a_stock()
+        {
+            using (var context = new StockTrackerContext())
+            {
+                var expectedStock = new StockView
+                {
+                    Id = 2,
+                    Name = "Second"
+                };
+
+                var stockController = new StockController();
+                stockController.Post(expectedStock);
+
+                var actualStock = context.Stocks.FirstOrDefault(s => s.StockName == "Second");
+                context.Stocks.Remove(actualStock);
+                context.SaveChanges();
+
+                expectedStock.ShouldBeEquivalentTo(actualStock);
+            }
+        }
+
+        [Test]
+        public void should_delete_a_stock()
+        {
+            using (var context = new StockTrackerContext())
+            {
+                var expectedStock = new Stock
+                {
+                    Id = 2,
+                   StockName  = "Delete"
+                };
+                context.Stocks.Add(expectedStock);
+                context.SaveChanges();
+
+                var stockController = new StockController();
+                stockController.Delete(expectedStock.Id);
+
+                var actualStock = context.Stocks.FirstOrDefault(s => s.StockName == "Delete");
+
+                Assert.IsNull(actualStock);
+
+                //context.Stocks.Remove(actualStock);
+                //context.SaveChanges();
+            }
+        }
+
     }
 }

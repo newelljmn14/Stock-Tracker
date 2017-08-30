@@ -100,3 +100,9 @@ C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker.Tests\bin\Debug
 C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker.Tests\bin\Debug\FluentAssertions.xml
 C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker.Tests\bin\Debug\FluentAssertions.Core.pdb
 C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker.Tests\bin\Debug\FluentAssertions.Core.xml
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\FluentAssertions.Core.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\FluentAssertions.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\FluentAssertions.pdb
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\FluentAssertions.xml
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\FluentAssertions.Core.pdb
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker.Tests\bin\Debug\FluentAssertions.Core.xml
