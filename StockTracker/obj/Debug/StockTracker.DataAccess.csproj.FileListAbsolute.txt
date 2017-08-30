@@ -38,3 +38,4 @@ C:\Users\mnewell\Desktop\StockTracker\Stock-Tracker\StockTracker\obj\Debug\Stock
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\bin\Debug\StockTracker.DataAccess.dll.config
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\bin\Debug\StockTracker.DataAccess.dll
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.dll
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.Migrations.uniquifyStockName.resources

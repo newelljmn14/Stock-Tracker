@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Transactions;
 using FluentAssertions;
 using NUnit.Framework;
 using StockTracker.DataAccess;
@@ -10,68 +11,56 @@ namespace StockTracker.Tests
     [TestFixture]
     public class StockController_should_
     {
-        [OneTimeSetUp]
-        public void SetupEnvironment()
+        private TransactionScope _transactionScope;
+        private string _testName = "whatever";
+
+        [SetUp]
+        public void SetUp()
         {
-            using (var context = new StockTrackerContext())
-            {
-                Stock StockToAdd = new Stock
-                {
-                    Id = 1,
-                    StockName = "TST"
-                };
-
-                context.Stocks.Add(StockToAdd);
-                context.SaveChanges();
-            }
-
+            _transactionScope = new TransactionScope();
         }
 
-        [OneTimeTearDown]
-        public void TeardownEnvironment()
+        [TearDown]
+        public void TearDown()
         {
-            using (var context = new StockTrackerContext())
-            {
-                Stock StockToDelete = context.Stocks.FirstOrDefault(s => s.StockName == "TST");
-
-                context.Stocks.Remove(StockToDelete);
-                context.SaveChanges();
-            }
+            _transactionScope.Dispose();
         }
 
         [Test]
-        public void should_get_a_stock_from_database_with_id_1()
+        public void get_a_stock_from_database_with_id_1()
         {
             using (var context = new StockTrackerContext())
             {
-                var expectedStock = context.Stocks.First();
+                var expectedStock = new Stock
+                {
+                    StockName = _testName,
+                };
+
+                context.Stocks.Add(expectedStock);
+                context.SaveChanges();
+
                 var stockController = new StockController();
                 var actualStock = stockController.Get(expectedStock.Id)[0];
 
-                expectedStock.ShouldBeEquivalentTo(actualStock);
+                Assert.AreEqual(expectedStock.StockName, actualStock.Name);
             }
             
         }
 
         [Test]
-        public void should_post_a_stock()
+        public void post_a_stock()
         {
             using (var context = new StockTrackerContext())
             {
-                var expectedStock = new StockView
+                var expectedStockView = new StockView
                 {
-                    Id = 2,
-                    Name = "Second"
+                    Name = _testName
                 };
 
                 var stockController = new StockController();
-                stockController.Post(expectedStock);
+                stockController.Post(expectedStockView);
 
-                var actualStock = context.Stocks.FirstOrDefault(s => s.StockName == "Second");
-                context.Stocks.Remove(actualStock);
-                context.SaveChanges();
-
-                expectedStock.ShouldBeEquivalentTo(actualStock);
+                Assert.IsTrue(context.Stocks.Any(s => s.StockName == _testName));
             }
         }
 
@@ -82,8 +71,7 @@ namespace StockTracker.Tests
             {
                 var expectedStock = new Stock
                 {
-                    Id = 2,
-                   StockName  = "Delete"
+                   StockName  = _testName
                 };
                 context.Stocks.Add(expectedStock);
                 context.SaveChanges();
@@ -91,12 +79,10 @@ namespace StockTracker.Tests
                 var stockController = new StockController();
                 stockController.Delete(expectedStock.Id);
 
-                var actualStock = context.Stocks.FirstOrDefault(s => s.StockName == "Delete");
+                var actualStock = context.Stocks.FirstOrDefault(s => s.StockName == _testName);
 
                 Assert.IsNull(actualStock);
 
-                //context.Stocks.Remove(actualStock);
-                //context.SaveChanges();
             }
         }
 

@@ -77,6 +77,10 @@
     <Compile Include="Migrations\201708030412489_Stock.Designer.cs">
       <DependentUpon>201708030412489_Stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708302142251_uniquifyStockName.cs" />
+    <Compile Include="Migrations\201708302142251_uniquifyStockName.Designer.cs">
+      <DependentUpon>201708302142251_uniquifyStockName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708030412489_Stock.resx">
       <DependentUpon>201708030412489_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708302142251_uniquifyStockName.resx">
+      <DependentUpon>201708302142251_uniquifyStockName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
