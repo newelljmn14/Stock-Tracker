@@ -39,3 +39,4 @@ C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracke
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\bin\Debug\StockTracker.DataAccess.dll
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.dll
 C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.Migrations.uniquifyStockName.resources
+C:\Users\newel\Desktop\Coding\C#\Projects\stock-tracker\StockTracker\StockTracker\obj\Debug\StockTracker.DataAccess.Migrations.ChangeStockNumberCharacters.resources

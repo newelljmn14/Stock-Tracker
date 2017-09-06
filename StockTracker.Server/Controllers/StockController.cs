@@ -67,5 +67,15 @@ namespace StockTracker.Server.Controllers
                 ctx.SaveChanges();
             }
         }
+
+        public void Update(int id, StockView stockView)
+        {
+            using (var context = new StockTrackerContext())
+            {
+                var stockToUpdate = context.Stocks.FirstOrDefault(s => s.Id == id);
+                stockToUpdate.StockName = stockView.Name;
+                context.SaveChanges();
+            }
+        }
     }
 }

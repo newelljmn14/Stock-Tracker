@@ -81,6 +81,10 @@
     <Compile Include="Migrations\201708302142251_uniquifyStockName.Designer.cs">
       <DependentUpon>201708302142251_uniquifyStockName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709050534333_Change-Stock-Number-Characters.cs" />
+    <Compile Include="Migrations\201709050534333_Change-Stock-Number-Characters.Designer.cs">
+      <DependentUpon>201709050534333_Change-Stock-Number-Characters.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708302142251_uniquifyStockName.resx">
       <DependentUpon>201708302142251_uniquifyStockName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709050534333_Change-Stock-Number-Characters.resx">
+      <DependentUpon>201709050534333_Change-Stock-Number-Characters.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -17,7 +17,12 @@ namespace StockTracker.Tests
         [SetUp]
         public void SetUp()
         {
-            _transactionScope = new TransactionScope();
+            _transactionScope = new TransactionScope(
+                TransactionScopeOption.RequiresNew,
+                new TransactionOptions
+                {
+                    IsolationLevel = IsolationLevel.ReadUncommitted
+                });
         }
 
         [TearDown]
@@ -84,6 +89,36 @@ namespace StockTracker.Tests
                 Assert.IsNull(actualStock);
 
             }
+        }
+
+        [Test]
+        public void update_a_stock()
+        {
+            string expectedName = "updatedStock2";
+            int stockId;
+            using (var context = new StockTrackerContext())
+            {
+                var stockToUpdate = new Stock {StockName = _testName};
+                context.Stocks.Add(stockToUpdate);
+                context.SaveChanges();
+                stockId = stockToUpdate.Id;
+
+                var expectedStock = new StockView
+                {
+                    Name = expectedName
+                };
+
+                var stockController = new StockController();
+                stockController.Update(stockToUpdate.Id, expectedStock);
+            }
+
+            using (var context = new StockTrackerContext())
+            {
+                var updatedStock = context.Stocks.First(s => s.Id == stockId);
+                Assert.AreEqual(expectedName, updatedStock.StockName);
+            }
+
+
         }
 
     }

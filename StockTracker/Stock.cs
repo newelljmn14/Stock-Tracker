@@ -7,7 +7,7 @@ namespace StockTracker.DataAccess
     {
         public int Id { get; set; }
         [Index(IsUnique = true)]
-        [StringLength(8)]
+        [StringLength(24)]
         public string StockName { get; set; }
         public decimal InitialPrice { get; set; }
     }
