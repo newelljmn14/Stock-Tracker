@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Stock Tracker</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function(){
+          var txt1 = "<p>Text.</p>";
+          var txt2 = $("<p></p>").text("Text."); 
+          var txt3 = document.createElement("p");
+          txt3.innerHTML = "Text.";               
+          $("body").append(txt1, txt2, txt3);    
+      });
+    </script>
+    <script src="load-landing-page.js"></script> 
+  </body>
+</html>
