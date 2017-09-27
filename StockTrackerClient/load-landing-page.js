@@ -17,7 +17,8 @@ var initializeContainer = function() {
 function createUsername() {
     var usernameContainer = $('<div></div>', {id: 'usernameContainer'});
     var usernameLabel = $('<label>username: </label>');
-    usernameInput = $('<input type="text" />', {id: 'username'});
+    usernameInput = $('<input type="text" />')
+        .attr('id', 'username');
     $(usernameContainer).append(usernameLabel, usernameInput);
 
     $(container).append(usernameContainer);
@@ -43,7 +44,26 @@ function createRegistration() {
 }
 
 function register() {
-    console.log($('#password').val());
+    var usernameText = $('#username').val();
+    var passwordText = $('#password').val();
+
+    var registrationCredentials =
+        JSON.stringify({
+            'userName': usernameText,
+            'password': passwordText,
+            'confirmPassword': passwordText
+        });
+
+    console.log(registrationCredentials);
+
+    // $.ajax({
+    //     type: 'post',
+    //     url: 'http://localhost:22447/api/account/register',
+    //     data: registrationCredentials,
+    //     contentType: 'application/x-www-form-urlencoded',
+    // });
+
+    $.post('http://localhost:22447/api/account/register', registrationCredentials);
 }
 
 
