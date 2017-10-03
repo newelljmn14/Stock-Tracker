@@ -9,6 +9,7 @@ using StockTracker.DataAccess;
 
 namespace StockTracker.Server.Controllers
 {
+    [Authorize]
     public class StockController : ApiController
     {
         public List<StockView> Get(int id = 0)
