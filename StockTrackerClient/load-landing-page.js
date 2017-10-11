@@ -8,6 +8,7 @@ $(document).ready(function(){
     createRegistration();
 
     initializeLoginContainer();
+    renderStockButton();
 });
 
 var initializeRegistrationContainer = function() {
@@ -69,6 +70,15 @@ function register() {
     $.post('http://localhost:22447/api/account/register', registrationCredentials);
 }
 
+function renderStockButton() {
+    $('body')
+    .append(
+        $('<button>')
+        .text('getStockTest')
+        .click(getStock)
+    );
+}
+
 var initializeLoginContainer = function() {
     container = $('<div>Login</div>')
         .attr('id', 'login-container');
@@ -116,8 +126,24 @@ function loginWithCredentials() {
         grant_type: 'password'
     };
 
-    $.post('http://localhost:22447/token', credentials)
-        .done(function(results) {
-            console.log(results);
+    $.post('http://localhost:22447/token', credentials, function(results) {
+            sessionStorage.setItem('token', results.access_token);
+            sessionStorage.setItem('expiresIn', results.expires_in);
+            sessionStorage.setItem('tokenType', results.token_type);
+
+            $.ajaxSetup({
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader('Authorization', 'bearer ' + results.access_token);
+                }
+            }) 
+        })
+        .fail(function(error) {
+            console.log(error);
         });
+}
+
+function getStock() {
+    $.get('http://localhost:22447/api/stock/72', function(data) {
+        console.log(data);
+    });
 }
