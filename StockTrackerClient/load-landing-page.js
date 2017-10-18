@@ -1,34 +1,39 @@
-var container;
-var usernameInput;
+//ok?
+renderLandingPage();
 
-$(document).ready(function(){
+function renderLandingPage() {$(document).ready(function() {
     initializeRegistrationContainer();
-    createUsername();
-    createPassword();
-    createRegistration();
+    renderUsername();
+    renderPassword();
+    renderRegistration();
 
     initializeLoginContainer();
     renderStockButton();
-});
+    });
+}
 
 var initializeRegistrationContainer = function() {
-    container = $('<div>Register</div>', {id: 'container'});
+    container = $('<div>Register</div>')
+        .attr('id', 'container');
     
     $('body').append(container);
 }
 
-function createUsername() {
-    var usernameContainer = $('<div></div>', {id: 'usernameContainer'});
+function renderUsername() {
+    var usernameContainer = $('<div></div>')
+        .attr('id', 'usernameContainer');
     var usernameLabel = $('<label>username: </label>');
-    usernameInput = $('<input type="text" />')
+    var usernameInput = $('<input type="text" />')
         .attr('id', 'username');
     $(usernameContainer).append(usernameLabel, usernameInput);
 
-    $(container).append(usernameContainer);
+    $('#container').append(usernameContainer);
 }
 
-var createPassword = () => {
-    var passwordContainer = $('<div></div>', {id: 'passwordContainer'});
+// why is line 34 ok?
+var renderPassword = () => {
+    var passwordContainer = $('<div></div>')
+        .attr('id', 'passwordContainer');
     var passwordLabel = $('<label>password: </label>');
     $(passwordContainer).append(passwordLabel, passwordInput);
 
@@ -37,37 +42,13 @@ var createPassword = () => {
         .attr("id", "password")
         .appendTo(passwordContainer);
 
-    $(container).append(passwordContainer);
+    $('#container').append(passwordContainer);
 }
 
-function createRegistration() {
+function renderRegistration() {
     var registerButton = '<button onClick="register()" >register</button>';
 
-    $(container).append(registerButton);
-}
-
-function register() {
-    var usernameText = $('#username').val();
-    var passwordText = $('#password').val();
-
-    var registrationCredentials =
-        {
-            'userName': usernameText,
-            'password': passwordText,
-            'confirmPassword': passwordText
-        };
-
-    console.log(registrationCredentials);
-
-    // $.ajax({
-    //     type: 'post',
-    //     url: 'http://localhost:22447/api/account/register',
-    //     data: registrationCredentials,
-    //     contentType: 'application/json',
-    //     dataType: 'json'
-    // });
-
-    $.post('http://localhost:22447/api/account/register', registrationCredentials);
+    $('#container').append(registerButton);
 }
 
 function renderStockButton() {
@@ -80,27 +61,28 @@ function renderStockButton() {
 }
 
 var initializeLoginContainer = function() {
-    container = $('<div>Login</div>')
+    var container = $('<div>Login</div>')
         .attr('id', 'login-container');
     
     $('body').append(container);
 
-    username = $('<div>')
+    var username = $('<div>')
         .attr('id', 'login-username');
     
-    usernameLabel = $('<label>username: </label>');
-    usernameInput = $('<input>')
+    var usernameLabel = $('<label>username: </label>');
+    var usernameInput = $('<input>')
         .attr('id', 'login-username-input');
 
     username.append(usernameLabel);
     username.append(usernameInput);
 
-    password = $('<div>')
+    var password = $('<div>')
         .attr('id', 'login-password');
 
-    passwordLabel = $('<label>password: </label>');
-    passwordInput = $('<input>')
-        .attr('id', 'login-password-input');
+    var passwordLabel = $('<label>password: </label>');
+    var passwordInput = $('<input>')
+        .attr('id', 'login-password-input')
+        .attr('type', 'password');
 
     password.append(passwordLabel);
     password.append(passwordInput);
@@ -108,42 +90,8 @@ var initializeLoginContainer = function() {
     container.append(username);
     container.append(password);
 
-    login = $('<button>login</button>')
+    var login = $('<button>login</button>')
         .attr('onClick', 'loginWithCredentials()');
 
-    container.append(login);
-}
-
-
-
-function loginWithCredentials() {
-    username = $('#login-username-input').val();
-    password = $('#login-password-input').val();
-
-    var credentials = {
-        username: username,
-        password: password,
-        grant_type: 'password'
-    };
-
-    $.post('http://localhost:22447/token', credentials, function(results) {
-            sessionStorage.setItem('token', results.access_token);
-            sessionStorage.setItem('expiresIn', results.expires_in);
-            sessionStorage.setItem('tokenType', results.token_type);
-
-            $.ajaxSetup({
-                beforeSend: function(xhr) {
-                    xhr.setRequestHeader('Authorization', 'bearer ' + results.access_token);
-                }
-            }) 
-        })
-        .fail(function(error) {
-            console.log(error);
-        });
-}
-
-function getStock() {
-    $.get('http://localhost:22447/api/stock/72', function(data) {
-        console.log(data);
-    });
+    $('#login-container').append(login);
 }
